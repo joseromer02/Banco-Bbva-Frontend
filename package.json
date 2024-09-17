@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "html-to-image": "^1.11.11",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "jsqr": "^1.4.0",
+    "qrcode.react": "^4.0.1",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-qr-code": "^2.0.15",
+    "react-qr-reader": "^3.0.0-beta-1",
+    "react-toastify": "^10.0.5"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2"
+  }
+}

@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Ocultar las flechas en los inputs de tipo number */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.Toastify__toast--success {
+    background-color: #0d9488 !important; /* Cambia este color por el que prefieras */
+    color: white !important; /* Asegúrate de que se aplique el color blanco */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Este es el valor de Tailwind's shadow-xl */
+}
+
+.Toastify__toast--success:hover {
+    background-color: #14b8a6 !important; /* Cambia este color por el que prefieras en el hover */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Mantiene el mismo drop shadow al hacer hover */
+}
+
+/* Estilo global para las barras de desplazamiento */
+::-webkit-scrollbar {
+    width: 12px;  /* Ancho de la barra de desplazamiento */
+}
+
+/* Fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: rgba(2, 72, 138, 0.85);  /* Color de fondo */
+}
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(2, 64, 121, 0.87);  /* Color de la barra */
+    border-radius: 10px;  /* Bordes redondeados */
+    border: 3px solid #01549e;  /* Espacio entre la barra y el track */
+}
+
+/* Ocultar botones de flechas en los extremos */
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Para navegadores que no soportan -webkit-scrollbar (FireFox) */
+.scrollbar-custom {
+    scrollbar-width: thin;  /* Ancho de la barra */
+    scrollbar-color: rgba(2, 72, 138, 0.85) #01549e;  /* Color de la barra y del track */
+}
+
+.option-item .icon {
+    width: 40px; /* Tamaño del SVG */
+    height: 40px; /* Tamaño del SVG */
+    color: #0284c7; /* Color inicial del SVG */
+    transition: color 0.3s; /* Suavizado de la transición de color */
+}
+
+.option-item:hover .icon {
+    color: #ffffff; /* Color al hacer hover */
+}
+
+.add-acct-item {
+    color: #0284c7;
+    transition: color 0.3s;
+}
+
+.add-acct-item:hover {
+    color: #ffffff;
+}
+
